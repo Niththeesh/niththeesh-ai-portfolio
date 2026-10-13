@@ -1,4 +1,18 @@
-# Logs
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production builds
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+
+# Python virtual environment
+.venv/
+**/__pycache__/
+
+# Logs & Temp
 logs
 *.log
 npm-debug.log*
@@ -6,17 +20,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
+.tmp/
 *.local
 
-# Editor directories and files
+# OS & Editor
+.DS_Store
+Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
