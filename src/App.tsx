@@ -213,10 +213,10 @@ function App() {
                 <div className="profile-image-wrap">
                   <img
                     className="profile-photo"
-                    src="/profile.png"
+                    src={`${import.meta.env.BASE_URL}profile.png`}
                     alt={`${profile.fullName} profile portrait`}
                     onError={(e) => {
-                      ;(e.target as HTMLImageElement).src = '/fiver profile.png'
+                      ;(e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}fiver profile.png`
                     }}
                   />
                 </div>
